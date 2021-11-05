@@ -7,8 +7,8 @@ Input example:
 
 10
 
- +
+ /
 
-Result: 20
+Result: 1
 
 **Example language file Calc1.stk
