@@ -7,7 +7,7 @@ Input example:
 
 10
 
-+
+ +
 
 Result: 20
 
