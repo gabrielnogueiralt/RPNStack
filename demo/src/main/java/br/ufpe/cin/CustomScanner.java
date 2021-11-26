@@ -15,27 +15,20 @@ public class CustomScanner {
             } else {
                 Token token;
                 String operator = in.nextLine();
-                switch (operator) {
-                case "-":
+
+                if (operator.equals("-")) {
                     token = new Token(TokenType.MINUS, operator);
                     tokens.add(token);
-                    break;
-
-                case "+":
+                } else if (operator.equals("+")) {
                     token = new Token(TokenType.PLUS, operator);
                     tokens.add(token);
-                    break;
-                
-                case "/":
+                } else if (operator.equals("/")) {
                     token = new Token(TokenType.SLASH, operator);
                     tokens.add(token);
-                    break;
-
-                case "*":
+                } else if (operator.equals("*")) {
                     token = new Token(TokenType.STAR, operator);
                     tokens.add(token);
-                    break;
-                default:
+                } else {
                     throw new Error("Unexpected character: " + operator);
                 }
             }
